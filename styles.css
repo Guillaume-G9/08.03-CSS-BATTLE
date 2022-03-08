@@ -19,6 +19,7 @@ p {
 
 .active {
     background-color: #F5A503;
+    border: 2px solid turquoise;
     transition: all 300ms;
     -webkit-animation:antispin 5s ease infinite;
     -moz-animation:antispin 5s ease infinite;
