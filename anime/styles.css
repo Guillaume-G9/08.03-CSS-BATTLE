@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.05em;
+}
+
+body {
+    padding-top: 8%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p:first-of-type {
+    font-size: 0.8em;
+}
+
+span {
+    font-weight: bold;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 0.5% 3% 0.5% 3%;
+    border: none;
+    background-color: #DD2476;
+    color: white;
+    border-radius: 3px;
+}
+
+.head-container {
+    display: flex;
+    z-index: -100;
+}
+
+.square:nth-child(even) {
+    height: 19vh;
+    width: 8vw;
+    background: no-repeat center/110% url("./Yass_le_freesbie.png");
+    -webkit-animation:big-spin 6s cubic-bezier(.48,1.12,.63,.08) infinite;
+    -moz-animation:big-spin 6s cubic-bezier(.48,1.12,.63,.08) infinite;
+    animation:big-spin 6s cubic-bezier(.48,1.12,.63,.08) infinite;
+    animation-delay:-25s;
+}
+
+.square:nth-child(odd) {
+    height: 10vh;
+    width: 10vh;
+    background: no-repeat center/80% url("./Yass_le_freesbie.png");
+    -webkit-animation:spin 8s ease infinite;
+    -moz-animation:spin 8s ease infinite;
+    animation:spin 8s ease infinite;
+    animation-delay:500ms;
+}
+
+@-moz-keyframes spin { 
+    from {
+        transform: translateY(400%) rotate(0deg);
+    }
+     to { 
+        transform: translateY(-300%) rotate(360deg) translateX(25%); 
+        width: 15vw;
+        height: 25vh;
+        opacity: 80%;
+    }
+}
+
+@-webkit-keyframes spin { 
+    from {
+        transform: translateY(500%) rotate(0deg);
+    }
+     to { 
+        transform: translateY(-300%) rotate(360deg) translateX(25%); 
+        width: 15vw;
+        height: 25vh;
+        opacity: 80%; 
+    }
+}
+@keyframes spin { 
+    from {
+        transform: translateY(500%) rotate(0deg) translateX(25%);
+    }
+     to { 
+        transform: translateY(-300%) rotate(360deg) translateX(25%); 
+        width: 15vw;
+        height: 25vh;
+        opacity: 80%; 
+    }
+}
+
+@-moz-keyframes big-spin { 
+    from {
+        transform: translateY(500%) rotate(0deg);
+    }
+     to { 
+        transform: translateY(-200%) rotate(180deg); 
+        width: 25vw;
+        height: 55vh;
+        opacity: 60%;
+    }
+}
+
+@-webkit-keyframes big-spin { 
+    from {
+        transform: translateY(400%) rotate(0deg);
+    }
+     to { 
+        transform: translateY(-200%) rotate(180deg); 
+        width: 25vw;
+        height: 55vh;
+        opacity: 60%;
+    }
+}
+@keyframes big-spin { 
+    from {
+        transform: translateY(400%) rotate(0deg);
+    }
+     to { 
+        transform: translateY(-200%) rotate(180deg); 
+        width: 25vw;
+        height: 55vh;
+        opacity: 60%;
+    }
+}

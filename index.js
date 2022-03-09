@@ -1,3 +1,9 @@
-let getCube = document.querySelectorAll('p')
+let getColor = document.querySelector('input')
+let getText = document.querySelector('p')
+let getBackground = document.querySelector('.colorband')
 
-getCube.forEach(input => input.addEventListener('click', (e) => e.target.classList.toggle('active')))
+document.body.addEventListener('click', () => {
+    console.log(getColor.value)
+    getText.style.color =`${getColor}`
+    getBackground.style.backgroundColor =
+})
