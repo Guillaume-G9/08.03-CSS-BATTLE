@@ -1,9 +1,10 @@
-let getColor = document.querySelector('input')
-let getText = document.querySelector('p')
-let getBackground = document.querySelector('.colorband')
+let getCount = document.querySelector("h1")
+let count = 0
+let input = document.querySelector("#text")
 
-document.body.addEventListener('click', () => {
-    console.log(getColor.value)
-    getText.style.color =`${getColor}`
-    getBackground.style.backgroundColor =
-})
+document.onkeydown = function (e) {
+    e = e || window.event;
+    count ++
+    getCount.textContent = count
+    input.textContent += e.key
+};
